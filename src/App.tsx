@@ -1,7 +1,8 @@
 import "./App.css";
+import Main from "./layout/Main";
 
 function App() {
-  return <>asd</>;
+  return <Main />;
 }
 
 export default App;
