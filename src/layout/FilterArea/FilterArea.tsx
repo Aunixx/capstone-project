@@ -1,5 +1,5 @@
 import Select from "../../components/Select/Select";
-import "./FilterArea.scss";
+import "./FilterArea.css";
 
 interface FilterAreaProps {}
 

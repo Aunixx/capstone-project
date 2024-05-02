@@ -1,4 +1,4 @@
-import "./Lane.scss";
+import "./Lane.css";
 
 interface LaneProps {}
 

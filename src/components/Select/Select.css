@@ -1,0 +1,9 @@
+.MuiInputBase-root {
+  background-color: #2e2e2e;
+}
+.MuiInputBase-root .MuiOutlinedInput-notchedOutline {
+  border-color: #525252;
+}
+.MuiInputBase-root .MuiAutocomplete-endAdornment svg path {
+  fill: #525252;
+}

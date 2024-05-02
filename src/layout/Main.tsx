@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import FilterArea from "./FilterArea/FilterArea";
 import ListArea from "./ListArea/ListArea";
-import "./Main.scss";
+import "./Main.css";
 import axios from "axios";
 
 type IssueItem = {

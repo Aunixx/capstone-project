@@ -1,6 +1,6 @@
 import TextField from "@mui/material/TextField";
 import Autocomplete from "@mui/material/Autocomplete";
-import "./Select.scss";
+import "./Select.css";
 
 type option = {
   label: string;

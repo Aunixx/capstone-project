@@ -1,7 +1,6 @@
 import { useEffect } from "react";
 import Lane from "../../components/Lane/Lane";
-import "./ListArea.scss";
-import axios from "axios";
+import "./ListArea.css";
 
 interface ListAreaProps {
   issues: any;

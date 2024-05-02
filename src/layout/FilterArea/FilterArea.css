@@ -3,8 +3,9 @@
   padding: 1rem;
   border-radius: 0.5rem;
   padding: 1rem;
-  .dropdowns {
-    display: flex;
-    gap: 1rem;
-  }
+}
+
+.filter-area .dropdowns {
+  display: flex;
+  gap: 1rem;
 }
