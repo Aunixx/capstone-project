@@ -1,4 +1,5 @@
 # Capstone Project - Issue Tracker
+<img width="1678" alt="Screenshot 2024-05-04 at 2 38 27 AM" src="https://github.com/Aunixx/capstone-project/assets/46573638/acebdb29-0731-46d4-909f-7dbe7720d48c">
 
 ## Description
 
