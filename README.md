@@ -2,7 +2,8 @@
 
 ## Description
 
-This project is an issue tracker web application built using React. It allows users to manage and track issues with different statuses, categories, priorities, and tags.
+This project is an issue tracker web application built using React. It allows users to manage and track issues with different statuses, categories, priorities, and tags. The 
+implementation focuses highly on keeping the application performant despite handling a large dataset by following reacts best practices in terms of performance. 
 
 ## Features
 
