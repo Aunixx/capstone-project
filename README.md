@@ -6,6 +6,11 @@
 This project is an issue tracker web application built using React. It allows users to manage and track issues with different statuses, categories, priorities, and tags. The 
 implementation focuses highly on keeping the application performant despite handling a large dataset by following reacts best practices in terms of performance. 
 
+## Limitations
+
+The backend resource does not allow cross origin resource sharing, in order for the live app to work as expected kindly enable CORS in your browser, or run the app locally. 
+
+
 ## Features
 
 - Filter issues by category, priority, team, and tags
