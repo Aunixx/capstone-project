@@ -13,8 +13,6 @@ This project is an issue tracker web application built using React. It allows us
 - Reset filters to view all issues
 - Loading spinner while fetching data
 
-Sure, here's the updated Installation section with instructions for running the project and test cases:
-
 ## Installation
 
 1. Clone the repository:
