@@ -8,7 +8,7 @@ implementation focuses highly on keeping the application performant despite hand
 
 ## Limitations
 
-The backend resource does not allow cross origin resource sharing, in order for the live app to work as expected kindly enable CORS in your browser, or run the app locally. 
+The backend resource does not allow cross origin resource sharing, in order for the [live app](https://capstone-project-eight-gold.vercel.app/) to work as expected kindly [enable CORS](https://chromewebstore.google.com/detail/allow-cors-access-control/lhobafahddgcelffkeicbaginigeejlf) in your browser, or run the app locally. 
 
 
 ## Features
