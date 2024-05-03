@@ -12,31 +12,6 @@ const ListArea = ({ issues }: ListAreaProps) => {
   const [review, setReview] = useState<IssueItem[]>([]);
   const [completed, setCompleted] = useState<IssueItem[]>([]);
 
-  // useEffect(() => {
-  //   if (issues?.length) {
-  //     const todo = issues?.filter((issue) => issue?.status === "To Do");
-  //     if (todo) {
-  //       setTodo([...todo]);
-  //     }
-  //     const inProgress = issues?.filter(
-  //       (issue) => issue.status === "In Progress"
-  //     );
-  //     if (inProgress) {
-  //       setInprogress([...inProgress]);
-  //     }
-
-  //     const completed = issues?.filter(
-  //       (issue) => issue?.status === "Completed"
-  //     );
-  //     if (completed) {
-  //       setCompleted([...completed]);
-  //     }
-  //     const review = issues?.filter((issue) => issue?.status === "Review");
-  //     if (review) {
-  //       setReview([...review]);
-  //     }
-  //   }
-  // }, [issues]);
   useEffect(() => {
     if (issues?.length) {
       const todo: IssueItem[] = [];

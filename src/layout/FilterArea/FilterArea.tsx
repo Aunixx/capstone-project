@@ -94,6 +94,7 @@ const FilterArea = ({
           options={categories}
           name="Categories"
           val={categoryFilter}
+          testId="category"
           label="Filter By Category"
           setFilters={setCategoryFilter}
         />
@@ -102,6 +103,7 @@ const FilterArea = ({
           options={priorities}
           name="priority"
           val={priorityFilter}
+          testId="priority"
           label="Filter By  Priority"
           setFilters={setPriorityFilter}
         />
@@ -111,6 +113,7 @@ const FilterArea = ({
           options={team}
           name="team"
           val={teamFilter}
+          testId="team"
           label="Filter By Team"
           setFilters={setTeamFilter}
         />
@@ -122,7 +125,7 @@ const FilterArea = ({
         />
       </div>
       <div className="pills-area">
-        <div className="pills-section">
+        <div className="pills-section" data-testId="pills-section">
           {categoryFilter.map((filter: OptionType) => (
             <span className="category pill">
               <button onClick={() => removeFilter(filter, "category")}>
@@ -156,7 +159,11 @@ const FilterArea = ({
             </span>
           ))}
         </div>
-        <button className="reset-filter" onClick={handleReset}>
+        <button
+          className="reset-filter"
+          onClick={handleReset}
+          data-testId="reset-button"
+        >
           Reset Filter
         </button>
       </div>

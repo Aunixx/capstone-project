@@ -8,6 +8,7 @@ interface SelectProps {
   setFilters: any;
   label: string;
   val: OptionType[];
+  testId?: string;
 }
 
 const SimpleSelect = ({
@@ -17,6 +18,7 @@ const SimpleSelect = ({
   setFilters,
   label,
   val,
+  testId,
 }: SelectProps) => {
   const [value, onChange] = useState<readonly OptionType[]>([...val]);
   useEffect(() => {
@@ -24,7 +26,7 @@ const SimpleSelect = ({
   }, [value]);
 
   return (
-    <div className="select-wrappper">
+    <div className="select-wrappper" data-testId={testId}>
       <label>{label}</label>
       <Select
         isMulti
