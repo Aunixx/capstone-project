@@ -7,3 +7,16 @@
   gap: 1rem;
   padding: 2rem;
 }
+
+.loader-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  flex-direction: column;
+}
+.loader-wrapper p {
+  color: #e2e2e2;
+  font-size: 1rem;
+}

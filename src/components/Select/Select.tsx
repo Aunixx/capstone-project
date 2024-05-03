@@ -1,27 +1,42 @@
-import TextField from "@mui/material/TextField";
-import Autocomplete from "@mui/material/Autocomplete";
-import "./Select.css";
+import React, { useEffect, useState } from "react";
+import Select from "react-select";
 
-type option = {
-  label: string;
-  value: string;
-};
 interface SelectProps {
-  id: string;
-  options: option[];
+  options: readonly OptionType[];
+  placeholder: string;
+  name: string;
+  setFilters: any;
   label: string;
+  val: OptionType[];
 }
 
-const Select = ({ id, options, label }: SelectProps) => {
+const SimpleSelect = ({
+  options,
+  placeholder,
+  name,
+  setFilters,
+  label,
+  val,
+}: SelectProps) => {
+  const [value, onChange] = useState<readonly OptionType[]>([...val]);
+  useEffect(() => {
+    setFilters([...value]);
+  }, [value]);
+
   return (
-    <Autocomplete
-      disablePortal
-      id={id}
-      options={options}
-      sx={{ width: "100%" }}
-      renderInput={(params) => <TextField {...params} label={label} />}
-    />
+    <div className="select-wrappper">
+      <label>{label}</label>
+      <Select
+        isMulti
+        name={name}
+        placeholder={placeholder}
+        options={options}
+        onChange={onChange}
+        value={val}
+        className="basic-multi-select"
+        classNamePrefix="select"
+      />
+    </div>
   );
 };
-
-export default Select;
+export default SimpleSelect;

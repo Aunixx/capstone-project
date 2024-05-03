@@ -1,0 +1,42 @@
+.issue-list {
+  margin: 0;
+  padding: 0 1rem;
+  border: 1px solid #525252;
+  border-radius: 0.5rem;
+  display: flex;
+  flex-direction: column;
+}
+.issue-list .issue-item {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  list-style: none;
+  border-bottom: 1px solid #525252;
+  padding: 0.75rem 0;
+}
+.issue-list .issue-item:last-child {
+  border-bottom: none;
+}
+.issue-list .issue-item .issue-item-icon {
+  padding-right: 1rem;
+  border-right: 1px solid #525252;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.issue-list .issue-item .issue-item-icon svg {
+  width: 1rem;
+  height: 1rem;
+  color: #e2e2e2;
+}
+.issue-list .issue-item .issue-item-title {
+  margin: 0;
+  color: #e2e2e2;
+  font-size: 0.8rem;
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+}
+.issue-list .issue-item:first-child .issue-item-title {
+  font-weight: 700;
+}

@@ -1,6 +1,42 @@
 .lane-area {
-  padding: 1rem;
   border: 1px solid #525252;
   border-radius: 0.5rem;
   flex: 1;
+}
+.lane-area .issues-wrapper .infinite-scroll-component {
+  padding: 0 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.lane-area .lane-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+}
+.lane-area .lane-header .input-wrapper {
+  display: flex;
+  align-items: center;
+  background-color: #2e2e2e;
+  border-radius: 0.25rem;
+  border: 1px solid #525252;
+  padding-right: 0.75rem;
+}
+.lane-area .lane-header .input-wrapper svg {
+  color: #e2e2e2;
+}
+.lane-area .lane-header .input-wrapper input {
+  background-color: transparent;
+  border: none;
+  padding: 0.5rem 0 0.5rem 0.75rem;
+  color: #e2e2e2;
+}
+.lane-area .lane-header .input-wrapper input:focus-within {
+  outline: none;
+}
+.lane-area .lane-header h2 {
+  color: #e2e2e2;
+  margin: 0;
+  font-size: 1rem;
 }

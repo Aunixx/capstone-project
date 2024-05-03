@@ -3,9 +3,130 @@
   padding: 1rem;
   border-radius: 0.5rem;
   padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
 }
 
 .filter-area .dropdowns {
   display: flex;
   gap: 1rem;
+}
+.filter-area .dropdowns .select-wrappper {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  flex: 1;
+}
+.filter-area .dropdowns .select-wrappper label {
+  color: #e2e2e2;
+  font-weight: 600;
+}
+.filter-area .dropdowns .basic-multi-select {
+  flex: 1;
+  width: 100%;
+}
+.filter-area .dropdowns .basic-multi-select .select__control {
+  background-color: #2e2e2e;
+  border-color: #525252;
+  color: #e2e2e2;
+}
+.filter-area
+  .dropdowns
+  .basic-multi-select
+  .select__control
+  .select__input-container {
+  color: #e2e2e2;
+}
+.filter-area .dropdowns .basic-multi-select .select__multi-value {
+  display: none;
+}
+.filter-area .dropdowns .basic-multi-select .select__clear-indicator {
+  display: none;
+}
+.pills-area {
+  display: flex;
+  justify-content: space-between;
+}
+.pills-area .pills-section {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  width: 100%;
+  flex-wrap: wrap;
+}
+.pills-area .pills-section .pill {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+  padding: 0.25rem 0.5rem;
+  border-radius: 1rem;
+}
+.pills-area .pills-section .pill button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+}
+.pills-area .pills-section .pill span {
+  font-size: 1rem;
+  font-weight: 500;
+}
+.pills-area .pills-section .pill svg {
+  width: 1rem;
+  height: 1rem;
+}
+.pills-area .pills-section .pill.category {
+  background-color: #5694c540;
+  color: #5694c5;
+}
+.pills-area .pills-section .pill.category span {
+  color: #5694c5;
+}
+.pills-area .pills-section .pill.category svg {
+  color: #5694c5;
+}
+.pills-area .pills-section .pill.priority {
+  background-color: #d37fdf40;
+  color: #d37fdf;
+}
+.pills-area .pills-section .pill.priority span {
+  color: #d37fdf;
+}
+.pills-area .pills-section .pill.priority svg {
+  color: #d37fdf;
+}
+.pills-area .pills-section .pill.team {
+  background-color: #59bebc40;
+  color: #59bebc;
+}
+.pills-area .pills-section .pill.team span {
+  color: #59bebc;
+}
+.pills-area .pills-section .pill.team svg {
+  color: #59bebc;
+}
+.pills-area .pills-section .pill.tag {
+  background-color: #44c19d40;
+  color: #44c19d;
+}
+.pills-area .pills-section .pill.tag span {
+  color: #44c19d;
+}
+.pills-area .pills-section .pill.tag svg {
+  color: #44c19d;
+}
+
+.pills-area .reset-filter {
+  background: transparent;
+  border: 1px solid #367cd1;
+  color: #367cd1;
+  padding: 0.5rem 1rem;
+  font-weight: 600;
+  border-radius: 0.25rem;
+  white-space: nowrap;
+  cursor: pointer;
 }
