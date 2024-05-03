@@ -1,46 +1,86 @@
-# Getting Started with Create React App
+# Capstone Project - Issue Tracker
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Description
 
-## Available Scripts
+This project is an issue tracker web application built using React. It allows users to manage and track issues with different statuses, categories, priorities, and tags.
 
-In the project directory, you can run:
+## Features
 
-### `npm start`
+- Filter issues by category, priority, team, and tags
+- View issues categorized by status (To Do, In Progress, Review, Completed)
+- Search for issues by title
+- Infinite scroll for displaying large lists of issues
+- Reset filters to view all issues
+- Loading spinner while fetching data
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Sure, here's the updated Installation section with instructions for running the project and test cases:
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## Installation
 
-### `npm test`
+1. Clone the repository:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+```
+git clone <repository_url>
+```
 
-### `npm run build`
+2. Navigate to the project directory:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+```
+cd capstone-project
+```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+3. Install dependencies:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+```
+npm install
+```
 
-### `npm run eject`
+4. Run the project:
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+```
+npm start
+```
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+5. Open the application in your browser:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+```
+http://localhost:3000
+```
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+6. Run test cases:
 
-## Learn More
+```
+npm run test
+```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Usage
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+1. Upon launching the application, you will see a list of issues categorized by status.
+2. Use the filter area on the left to filter issues by category, priority, team, and tags.
+3. You can also search for specific issues by typing in the search bar.
+4. Scroll down to load more issues dynamically using infinite scroll.
+5. Click on the "Reset Filter" button to clear all filters and view all issues.
+
+## File Structure
+
+- `src/Layout/Main.tsx`: Main component containing the main layout of the application and integrating the FilterArea and ListArea components.
+- `src/Layout/ListArea/ListArea.tsx`: Component responsible for displaying issues categorized by status using the Lane component.
+- `src/Layout/FilterArea/FilterArea.tsx`: Component containing filter options for categories, priorities, teams, and tags.
+- `src/components/AsyncSelect/AsyncSelect.tsx`: Component for asynchronous multi-select dropdown for tags.
+- `src/components/Select/Select.tsx`: Component for multi-select dropdowns for categories, priorities, and teams.
+- `src/components/IssueItem/IssueItem.tsx`: Component representing individual issue items.
+- `src/components/Lane/Lane.tsx`: Component representing lanes for different issue statuses.
+- `src/App.css` and `src/Layout/Main.css`: Styling files for the application layout.
+
+## Technologies Used
+
+- React
+- Axios (for HTTP requests)
+- React Infinite Scroll Component (for infinite scrolling)
+- React Select (for dropdowns)
+- React Icons (for icons)
+- CSS (for styling)
+
+## Credits
+
+This project was created by Sahil E Arwand.
