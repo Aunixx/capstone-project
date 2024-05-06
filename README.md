@@ -1,9 +1,15 @@
 # Capstone Project - Issue Tracker
+<img width="1678" alt="Screenshot 2024-05-04 at 2 38 27 AM" src="https://github.com/Aunixx/capstone-project/assets/46573638/acebdb29-0731-46d4-909f-7dbe7720d48c">
 
 ## Description
 
 This project is an issue tracker web application built using React. It allows users to manage and track issues with different statuses, categories, priorities, and tags. The 
 implementation focuses highly on keeping the application performant despite handling a large dataset by following reacts best practices in terms of performance. 
+
+## Limitations
+
+The backend resource does not allow cross origin resource sharing, in order for the [live app](https://capstone-project-eight-gold.vercel.app/) to work as expected kindly [enable CORS](https://chromewebstore.google.com/detail/allow-cors-access-control/lhobafahddgcelffkeicbaginigeejlf) in your browser, or run the app locally. 
+
 
 ## Features
 
