@@ -27,7 +27,6 @@ const FilterArea = ({
   const [teamFilter, setTeamFilter] = useState<OptionType[]>([]);
 
   useEffect(() => {
-    console.log(tagFilter, categoryFilter, priorityFilter, teamFilter);
     const filteredIssues = allIssues.filter((issue) => {
       const tagMatch =
         tagFilter.length === 0 ||
@@ -63,7 +62,6 @@ const FilterArea = ({
   };
 
   const removeFilter = (filter: OptionType, type: string) => {
-    console.log(categoryFilter);
     switch (type) {
       case "category":
         setCategoryFilter(
